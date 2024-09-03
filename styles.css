@@ -10,6 +10,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -100,9 +101,8 @@ video {
 
 .btn-cv {
     position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
+    top: 10px;
+    right: 20px;
     background: #007BFF;
     width: 60px;
     height: 60px;
@@ -114,6 +114,12 @@ video {
     font-size: 24px;
     text-decoration: none;
     transition: background-color 0.3s;
+    flex-direction: column;
+}
+
+.btn-cv span {
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .btn-cv:hover {
@@ -123,9 +129,9 @@ video {
 /* Project Cards */
 .project-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     gap: 20px;
+    overflow-x: scroll;
+    padding-bottom: 10px;
 }
 
 .card {
@@ -137,6 +143,7 @@ video {
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 auto;
 }
 
 .card img {
@@ -149,6 +156,22 @@ video {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reviews Section */
+#reviews {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.review {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Modals */
