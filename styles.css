@@ -67,7 +67,7 @@ footer {
 /* About Section with Video Background */
 #about {
     position: relative;
-    height: 500px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +139,13 @@ video {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -183,10 +190,6 @@ video {
 }
 
 @media (max-width: 768px) {
-    #about {
-        height: 400px;
-    }
-
     .btn-cv {
         right: 10px;
     }
